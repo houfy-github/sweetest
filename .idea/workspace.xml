@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c857b21f-811e-4385-8d9b-defa918de941" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sweetest/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/autotest.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/autotest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/globals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/http.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/mobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/mobile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/web.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/keywords/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/keywords/windows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/locator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/parse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/snapshot.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/snapshot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/testcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/testsuite.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/testsuite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/utility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/sweetest/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/sweetest/windows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sweetest/testcase/Baidu-TestCase.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/sweetest/testcase/Baidu-TestCase.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="c857b21f-811e-4385-8d9b-defa918de941" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sweetest/sweetest/testcase.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -82,6 +59,15 @@
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -143,18 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sweetest/sweetest/log.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="43" column="24" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -200,6 +174,7 @@
         <option value="$PROJECT_DIR$/sweetest/sweetest/log.py" />
         <option value="$PROJECT_DIR$/sweetest/sweetest/autotest.py" />
         <option value="$PROJECT_DIR$/sweetest/sweetest/testcase.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -224,32 +199,6 @@
             <path>
               <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
               <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-              <item name="element" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-              <item name="sweetest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="sweetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (sweetest) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -360,30 +309,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583723974561</updated>
-      <workItem from="1583723976014" duration="32220000" />
+      <workItem from="1583723976014" duration="32624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32220000" />
+    <option name="totallyTimeSpent" value="32624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -720,6 +669,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sweetest/sweetest/testcase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -727,6 +683,13 @@
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
