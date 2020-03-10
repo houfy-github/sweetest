@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<testsuites>
+	<testsuite disabled="3" errors="3" errors_detail="H:0 M:0 L:0" failures="0" failures_detail="H:0 M:0 L:0" hostname="baidu" name="Baidu" skipped="0" tests="3" time="12.645011" timestamp="2020-03-10T15:06:42.091342">
+		<testcase classname="BAIDU_001" name="搜索：自动化测试" priority="H" time="3.46496">
+			<blocked message="SETUP is not success" type="Blocked"/>
+		</testcase>
+		<testcase classname="BAIDU_002" name="搜索：搜狗" priority="M" time="1.922879">
+			<blocked message="SETUP is not success" type="Blocked"/>
+		</testcase>
+		<testcase classname="BAIDU_005" name="搜索：&lt;测试数据&gt;" priority="M" time="1.801748">
+			<blocked message="SETUP is not success" type="Blocked"/>
+		</testcase>
+	</testsuite>
+</testsuites>

@@ -2,11 +2,11 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from sweetest.elements import e
-from sweetest.globals import g
-from sweetest.windows import w
-from sweetest.log import logger
-from sweetest.config import element_wait_timeout
+from .elements import e
+from .globals import g
+from .windows import w
+from .log import logger
+from .config import element_wait_timeout
 
 
 def locating_element(element, action=''):

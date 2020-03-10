@@ -1,10 +1,10 @@
 from copy import deepcopy
-from sweetest.globals import g
-from sweetest.elements import e
-from sweetest.log import logger
-from sweetest.parse import data_format
-from sweetest.database import DB
-from sweetest.utility import replace_dict, compare
+from ..globals import g
+from ..elements import e
+from ..log import logger
+from ..parse import data_format
+from ..database import DB
+from ..utility import replace_dict, compare
 
 
 def execute(step):

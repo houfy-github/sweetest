@@ -2,16 +2,16 @@ from copy import deepcopy
 import requests
 import json
 from injson import check
-from sweetest.globals import g
-from sweetest.elements import e
-from sweetest.log import logger
-from sweetest.parse import data_format
-from sweetest.utility import json2dict
+from ..globals import g
+from ..elements import e
+from ..log import logger
+from ..parse import data_format
+from ..utility import json2dict
 from pathlib import Path
 
 path = Path('lib') / 'http_handle.py'
 if path.is_file():
-    from lib import http_handle
+    from ..lib import http_handle
 else:
     from sweetest.lib import http_handle
 

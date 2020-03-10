@@ -1,0 +1,6 @@
+2020-03-10 15:03:45,302 [INFO]: #  From Excel import testsuite success
+2020-03-10 15:03:51,761 [ERROR]: #  *** Init global object failure ***
+Traceback (most recent call last):
+  File "D:/Project/sweetest/sweetest/sweetest/autotest.py", line 109, in run
+    if data_file.is_file():
+AttributeError: 'str' object has no attribute 'is_file'

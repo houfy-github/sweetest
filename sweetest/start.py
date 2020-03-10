@@ -1,4 +1,4 @@
-from sweetest import Autotest
+from .sweetest import Autotest
 import sys
 
 

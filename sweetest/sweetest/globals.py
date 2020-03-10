@@ -1,6 +1,6 @@
 import time
 from selenium import webdriver
-from sweetest.config import element_wait_timeout, page_flash_timeout
+from .config import element_wait_timeout, page_flash_timeout
 
 
 def now():

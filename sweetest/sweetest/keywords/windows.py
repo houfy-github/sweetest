@@ -1,9 +1,9 @@
 from pywinauto.application import Application
 from pywinauto.keyboard import send_keys as sendkeys
 import re
-from sweetest.log import logger
-from sweetest.globals import g
-from sweetest.utility import compare
+from ..log import logger
+from ..globals import g
+from ..utility import compare
 
 class Windows():
     def __init__(self, app):

@@ -5,9 +5,9 @@ import math
 import operator
 import time
 from functools import reduce
-from sweetest.globals import g, now
-from sweetest.log import logger
-from sweetest.utility import mkdir
+from .globals import g, now
+from .log import logger
+from .utility import mkdir
 
 
 def crop(element, src, target):

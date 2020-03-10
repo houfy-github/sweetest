@@ -1,15 +1,15 @@
 from time import sleep
 from pathlib import Path
 import re
-from sweetest.log import logger
-from sweetest.globals import g, now, timestamp
-from sweetest.elements import e
-from sweetest.windows import w
-from sweetest.snapshot import Snapshot
-from sweetest.locator import locating_elements, locating_data, locating_element
-from sweetest.keywords import web, common, mobile, http, files
-from sweetest.config import web_keywords, common_keywords, mobile_keywords, http_keywords, windows_keywords, files_keywords
-from sweetest.utility import replace_dict, replace
+from .log import logger
+from .globals import g, now, timestamp
+from .elements import e
+from .windows import w
+from .snapshot import Snapshot
+from .locator import locating_elements, locating_data, locating_element
+from .keywords import web, common, mobile, http, files
+from .config import web_keywords, common_keywords, mobile_keywords, http_keywords, windows_keywords, files_keywords
+from .utility import replace_dict, replace
 
 
 def elements_format(page, element):
@@ -79,7 +79,7 @@ class TestCase:
             if step['control'] == '>' and not if_result:
                 step['score'] = '-'
                 step['end_timestamp'] = timestamp()
-                logger.info('Skipped the <then> Step: %s|%s|%s|%s' %(step['no'], step['page'], step['keyword'], step['element']))
+                logger.info('Skipped the <then> Step: %s|%s|%s|%s' % (step['no'], step['page'], step['keyword'], step['element']))
                 continue
 
             # if 为真，不执行 else 语句

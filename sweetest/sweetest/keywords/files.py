@@ -1,5 +1,5 @@
 import os
-from sweetest.log import logger
+from ..log import logger
 
 
 def copy(step):

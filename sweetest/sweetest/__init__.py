@@ -2,8 +2,8 @@ import sys
 import shutil
 import zipfile
 from pathlib import Path
-from sweetest.autotest import Autotest
-from sweetest.report import reporter
+from .autotest import Autotest
+from .report import reporter
 
 
 def extract(zfile, path):

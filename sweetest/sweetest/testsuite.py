@@ -1,9 +1,9 @@
 import time
 from copy import deepcopy
-from sweetest.globals import g, timestamp
-from sweetest.windows import w
-from sweetest.testcase import TestCase
-from sweetest.log import logger
+from .globals import g, timestamp
+from .windows import w
+from .testcase import TestCase
+from .log import logger
 
 
 class TestSuite:

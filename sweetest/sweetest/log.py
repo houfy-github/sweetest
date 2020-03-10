@@ -2,7 +2,7 @@ import logging
 import datetime
 from pathlib import Path
 import sys
-from sweetest.utility import mkdir
+from .utility import mkdir
 
 
 def today():
@@ -20,7 +20,7 @@ def set_log(logger, log_path):
     file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
 
     # 单次文件日志
-    sweet_log = log_path / 'sweet.log'   
+    sweet_log = log_path + '/' + 'sweet.log'
     try:
         sweet_log.unlink()
     except:

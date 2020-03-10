@@ -7,13 +7,13 @@ import re
 import json
 import time
 import random
-from sweetest.config import header
-from sweetest.globals import g
+from .config import header
+from .globals import g
 
 
 path = Path('lib')
 if path.is_dir():
-    from lib import *
+    from .lib import *
 else:
     from sweetest.lib import *
 

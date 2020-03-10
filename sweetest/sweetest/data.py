@@ -1,7 +1,7 @@
 import xlrd
-from sweetest.utility import Excel, data2dict
-from sweetest.config import header
-from sweetest.globals import g
+from .utility import Excel, data2dict
+from .config import header
+from .globals import g
 
 
 def testsuite_format(data):
@@ -110,3 +110,5 @@ def testsuite2report(data):
                 step['output'] = step.pop('_output')
             report.append(case)
     return report
+
+

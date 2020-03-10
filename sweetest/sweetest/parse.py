@@ -1,7 +1,7 @@
-from sweetest.log import logger
-from sweetest.config import all_keywords, comma_lower, comma_upper, equals, vertical
-from sweetest.elements import e
-from sweetest.globals import g
+from .log import logger
+from .config import all_keywords, comma_lower, comma_upper, equals, vertical
+from .elements import e
+from .globals import g
 
 
 def escape(data):

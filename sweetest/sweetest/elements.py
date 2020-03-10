@@ -1,5 +1,5 @@
-from sweetest.utility import Excel, data2dict, replace
-from sweetest.log import logger
+from sweetest.sweetest.utility import Excel, data2dict, replace
+from sweetest.sweetest.log import logger
 
 
 def elements_format(data):
@@ -79,3 +79,9 @@ class Elements:
 
 
 e = Elements()
+
+
+if __name__ == '__main__':
+    
+    e.get_elements("D:\\Project\\sweetest\\sweetest\\element\\Baidu-Elements.xlsx")
+    print(e.elements)

@@ -1,19 +1,20 @@
-
+import os
 from pathlib import Path
 import sys
 import json
-from sweetest.data import testsuite_format, testsuite2data, testsuite2report
-from sweetest.parse import parse
-from sweetest.elements import e
-from sweetest.globals import g
-from sweetest.windows import w
-from sweetest.testsuite import TestSuite
-from sweetest.utility import Excel, get_record, mkdir
-from sweetest.log import logger, set_log
-from sweetest.junit import JUnit
-from sweetest.report import summary
-from sweetest.config import _testcase, _elements, _report
+from sweetest.sweetest.data import testsuite_format, testsuite2data, testsuite2report
+from sweetest.sweetest.parse import parse
+from sweetest.sweetest.elements import e
+from sweetest.sweetest.globals import g
+from sweetest.sweetest.windows import w
+from sweetest.sweetest.testsuite import TestSuite
+from sweetest.sweetest.utility import Excel, get_record, mkdir
+from sweetest.sweetest.log import logger, set_log
+from sweetest.sweetest.junit import JUnit
+from sweetest.sweetest.report import summary
+from sweetest.sweetest.config import _testcase, _elements, _report
 
+base_path = os.path.dirname(os.path.dirname(__file__))
 
 class Autotest:
     def __init__(self, file_name, sheet_name, desired_caps={}, server_url=''):
@@ -27,8 +28,8 @@ class Autotest:
         g.plan_name = file_name.split('-')[0]
         g.init(self.desired_caps, self.server_url)
 
-        plan_path = Path('snapshot') / g.plan_name
-        task_path = plan_path / g.start_time[1:] 
+        plan_path = base_path + '/sweetest/snapshot/' + g.plan_name
+        task_path = plan_path + '/' + g.start_time[1:]
 
         for p in ('JUnit', 'report', 'snapshot', plan_path, task_path, 'report/' + g.plan_name):
             mkdir(p)
@@ -36,15 +37,14 @@ class Autotest:
         g.plan_data['log'] = set_log(logger, task_path)
         
         self.testcase_file = str(
-            Path('testcase') / (file_name + '-' + _testcase + '.xlsx'))
+            base_path + '/testcase/' + (file_name + '-' + _testcase + '.xlsx'))
         self.elements_file = str(
-            Path('element') / (g.plan_name + '-' + _elements + '.xlsx'))
+            base_path + '/element/' + (g.plan_name + '-' + _elements + '.xlsx'))
         self.report_xml = str(
-            Path('JUnit') / (file_name + '-' + _report + g.start_time + '.xml'))
+            base_path + '/sweetest/JUnit/' + (file_name + '-' + _report + g.start_time + '.xml'))
         self.testcase_workbook = Excel(self.testcase_file, 'r')
         self.sheet_names = self.testcase_workbook.get_sheet(sheet_name)
-        self.report_excel = str(Path(
-            'report') / g.plan_name / (file_name + '-' + _report + g.start_time + '.xlsx'))
+        self.report_excel = str(base_path + '/sweetest/report/' + g.plan_name + '/' + (file_name + '-' + _report + g.start_time + '.xlsx'))
         self.report_workbook = Excel(self.report_excel, 'w')
 
         self.report_data = {}  # 测试报告详细数据
@@ -104,9 +104,11 @@ class Autotest:
         try:
             g.set_driver()
             # 如果测试数据文件存在，则从该文件里读取数据，赋值到全局变量列表里
-            data_file = Path('data') / (g.plan_name +
-                                        '-' + sheet_name + '.csv')
-            if data_file.is_file():
+            data_file = os.path.abspath(base_path + '/data' + (g.plan_name +
+                                        '-' + sheet_name + '.csv'))
+
+            # if data_file.is_file():
+            if os.path.isfile(data_file):
                 g.var = get_record(str(data_file))
             w.init()
         except:
@@ -140,3 +142,51 @@ class Autotest:
             self.report_data[sheet_name] = testsuite2report(testsuite)
         except:
             logger.exception('*** Save the report is failure ***')
+
+
+if __name__ == '__main__':
+    # 项目名称，和测试用例、页面元素表文件名称中的项目名称必须一致
+    plan_name = 'Baidu'
+
+    # 单 sheet 页面模式
+    sheet_name = 'baidu'
+
+    # sheet 页面匹配模式，仅支持结尾带*
+    # sheet_name = 'TestCase*'
+
+    # sheet 页面列表模式
+    # sheet_name = ['TestCase', 'test']
+
+    # 环境配置信息
+    # Chrome
+    desired_caps = {'platformName': 'Desktop', 'browserName': 'Chrome'}
+    # headless
+    # desired_caps = {'platformName': 'Desktop', 'browserName': 'Chrome', 'headless': True}
+    # 设置全局截图
+    # desired_caps = {'platformName': 'Desktop', 'browserName': 'Chrome', 'snapshot': True}
+    # 指定 driver 路径
+    # desired_caps = {'platformName': 'Desktop', 'browserName': 'Chrome', 'executable_path': 'D:\drivers\chromedriver.exe'}
+    server_url = ''
+
+    # Windows GUI
+    # notepad start
+    # desired_caps = {'platformName': 'Windows', 'cmd_line': r'notepad.exe', 'timeout': 5, 'backend': 'uia'}
+    # notepad connect
+    # desired_caps = {'platformName': 'Windows', 'path': r'C:\Program Files\Microsoft Office\Office16\EXCEL.EXE'}
+
+    # 初始化自动化实例
+    sweet = Autotest(plan_name, sheet_name, desired_caps, server_url)
+
+    # 按条件执行,支持筛选的属性有：'id', 'title', 'designer', 'priority'
+    # sweet.fliter(priority='H')
+
+    # 执行自动化测试
+    sweet.plan()
+
+    # group = WEB
+    # project = Baidu
+    # 测试报告详细数据，可以自行处理后写入其他测试报告系统
+    # print(sweet.report_data)
+
+    # 如果是集成到 CI/CD，则给出退出码
+    # sys.exit(sweet.code)

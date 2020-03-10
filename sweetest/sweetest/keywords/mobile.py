@@ -1,12 +1,12 @@
 from time import sleep
 import re
-from sweetest.globals import g
-from sweetest.elements import e
-from sweetest.windows import w
-from sweetest.locator import locating_elements, locating_data, locating_element
-from sweetest.log import logger
-from sweetest.parse import data_format
-from sweetest.utility import compare
+from ..globals import g
+from ..elements import e
+from ..windows import w
+from ..locator import locating_elements, locating_data, locating_element
+from ..log import logger
+from ..parse import data_format
+from ..utility import compare
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.common.exceptions import ElementClickInterceptedException
 

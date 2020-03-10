@@ -1,0 +1,77 @@
+2020-03-10 15:06:42,091 [INFO]: #  From Excel import testsuite success
+2020-03-10 15:06:47,545 [INFO]: #  ==================================================
+2020-03-10 15:06:47,546 [INFO]: #  *** SETUP testcase ***
+2020-03-10 15:06:47,547 [INFO]: #  >>> Run the TestCase: HOME_001|打开百度
+2020-03-10 15:06:47,549 [INFO]: #  Run the Step: 1|通用|OPEN|通用-百度搜索链接
+2020-03-10 15:06:50,295 [INFO]: #  --- success ---
+2020-03-10 15:06:50,496 [INFO]: #  Run the Step: 2|百度搜索页面|CHECK|通用-页面title
+2020-03-10 15:06:50,497 [INFO]: #  DATA:'百度一下\\，你就知道'
+2020-03-10 15:06:50,506 [INFO]: #  REAL:'百度一下，你就知道'
+2020-03-10 15:06:50,945 [ERROR]: #  +++ failure +++
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 23, in title
+    assert data['text'] == g.driver.title
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\testcase.py", line 137, in run
+    element = getattr(web, step['keyword'].lower())(step)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 93, in check
+    var[by] = getattr(Common, by)(data, output)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 25, in title
+    raise Exception(f'Check Failure, DATA:{data["text"]}, REAL:{g.driver.title}')
+Exception: Check Failure, DATA:百度一下\，你就知道, REAL:百度一下，你就知道
+2020-03-10 15:06:51,010 [WARNING]: #  Run the testcase: BAIDU_001|搜索：自动化测试 blocked, SETUP is not success
+2020-03-10 15:06:51,011 [INFO]: #  ==================================================
+2020-03-10 15:06:51,011 [INFO]: #  *** SETUP testcase ***
+2020-03-10 15:06:51,012 [INFO]: #  >>> Run the TestCase: HOME_001|打开百度
+2020-03-10 15:06:51,012 [INFO]: #  Run the Step: 1|百度搜索页面|OPEN|通用-百度搜索链接
+2020-03-10 15:06:52,251 [INFO]: #  --- success ---
+2020-03-10 15:06:52,451 [INFO]: #  Run the Step: 2|百度搜索页面|CHECK|通用-页面title
+2020-03-10 15:06:52,452 [INFO]: #  DATA:'百度一下\\，你就知道'
+2020-03-10 15:06:52,461 [INFO]: #  REAL:'百度一下，你就知道'
+2020-03-10 15:06:52,932 [ERROR]: #  +++ failure +++
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 23, in title
+    assert data['text'] == g.driver.title
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\testcase.py", line 137, in run
+    element = getattr(web, step['keyword'].lower())(step)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 93, in check
+    var[by] = getattr(Common, by)(data, output)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 25, in title
+    raise Exception(f'Check Failure, DATA:{data["text"]}, REAL:{g.driver.title}')
+Exception: Check Failure, DATA:百度一下\，你就知道, REAL:百度一下，你就知道
+2020-03-10 15:06:52,934 [WARNING]: #  Run the testcase: BAIDU_002|搜索：搜狗 blocked, SETUP is not success
+2020-03-10 15:06:52,934 [INFO]: #  ==================================================
+2020-03-10 15:06:52,935 [INFO]: #  *** SETUP testcase ***
+2020-03-10 15:06:52,936 [INFO]: #  >>> Run the TestCase: HOME_001|打开百度
+2020-03-10 15:06:52,937 [INFO]: #  Run the Step: 1|百度搜索页面|OPEN|通用-百度搜索链接
+2020-03-10 15:06:54,015 [INFO]: #  --- success ---
+2020-03-10 15:06:54,216 [INFO]: #  Run the Step: 2|百度搜索页面|CHECK|通用-页面title
+2020-03-10 15:06:54,221 [INFO]: #  DATA:'百度一下\\，你就知道'
+2020-03-10 15:06:54,237 [INFO]: #  REAL:'百度一下，你就知道'
+2020-03-10 15:06:54,734 [ERROR]: #  +++ failure +++
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 23, in title
+    assert data['text'] == g.driver.title
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\sweetest\sweetest\sweetest\testcase.py", line 137, in run
+    element = getattr(web, step['keyword'].lower())(step)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 93, in check
+    var[by] = getattr(Common, by)(data, output)
+  File "D:\Project\sweetest\sweetest\sweetest\keywords\web.py", line 25, in title
+    raise Exception(f'Check Failure, DATA:{data["text"]}, REAL:{g.driver.title}')
+Exception: Check Failure, DATA:百度一下\，你就知道, REAL:百度一下，你就知道
+2020-03-10 15:06:54,736 [WARNING]: #  Run the testcase: BAIDU_005|搜索：<测试数据> blocked, SETUP is not success
+2020-03-10 15:06:57,065 [INFO]: #  --- Quit th Driver: Chrome

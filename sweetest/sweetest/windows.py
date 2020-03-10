@@ -1,5 +1,5 @@
-from sweetest.globals import g
-from sweetest.log import logger
+from .globals import g
+from .log import logger
 
 
 class Windows:
